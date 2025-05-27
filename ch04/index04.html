@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 속성에 대해 알아보자</title>
+    <!-- Internal style sheet declare -->
+     <style>
+        /* css 주석 */
+        .info-text {
+            color: blue;
+            
+        }
+     </style>
+
+</head>
+<body>
+    <!-- 각 태그에 속성이란 것들을 설정할수 있다-->
+    <!--1. id 속성 : 요소에 고유한 값을 지정할수있다 -->
+    <h1 id = "main-title" style="color: red;">HTML 속성 배우기</h1>
+    <h2 id = "main-title2">id 속성 확인(렌더되는 페이지에 같은 id 값을 할당해서는 안된다)</h2>
+
+    <!--2. class 속성 : 여러 요소에 공통된 값을 지정할수있다  -->
+    <p class = "info-text">This is first paragraph</p>
+    <p class = "info-text">This is second paragraph</p>
+
+    <!--3. src와 alt 속성 : 경로(이미지 태그 경로 - alt 대체 속성)-->
+    <img src="../ch02/img/sample.png" alt="Background Image">
+
+    <!--4. href 속성 : 링크 연결 -->
+    <a href="https://www.naver.com/" target="_blank">Link to Naver site</a>
+
+    <!--5. style 속성 : 인라인 스타일 css style apply -->
+    <div style="color: dodgerblue; font-size: 22px;">Style property test</div>
+
+    <!--6. data 속성 : 사용자 정의 데이터 저장 -->
+    <button data-my="asd1234" ondblclick="alert('clicked')">Button</button>
+
+    
+
+</body>
+</html>
