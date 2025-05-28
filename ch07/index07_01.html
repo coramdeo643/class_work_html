@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector Practice</title>
+
+    <!-- internal style sheet-->
+    <style>
+      /* Selector -> Tag selector */
+      p {
+        color: yellow;
+      }
+      /* Selector -> id selector : id가 temp-01 요소 스타일을 적용 */
+      #temp-01 {
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      /* Selector -> class selector : class = "temp-02"인 요소들을 선택한다 */
+      .temp-02 {
+        color: gold;
+        font-size: 22px;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Selector?</h2>
+    <p id="temp">this is first p tag</p>
+    <p id="temp-01">this is second p tag</p>
+    <p class="temp-02">this is third p tag</p>
+    <p class="temp-02">this is fourth p tag</p>
+  </body>
+</html>

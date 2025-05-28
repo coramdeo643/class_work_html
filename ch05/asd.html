@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fancy Timetable</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 40px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 16px 24px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+      transition: background 0.3s;
+    }
+    th {
+      background: #4f8cff;
+      color: #fff;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+    }
+    tr:hover td {
+      background: #eaf1ff;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .highlight {
+      background: #ffe082;
+      color: #333;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center; color:#4f8cff;">My Fancy Timetable</h2>
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>08:00 - 09:00</td>
+      <td class="highlight">Math</td>
+      <td>English</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td>History</td>
+    </tr>
+    <tr>
+      <td>09:00 - 10:00</td>
+      <td>English</td>
+      <td class="highlight">Science</td>
+      <td>Math</td>
+      <td>History</td>
+      <td>PE</td>
+    </tr>
+    <tr>
+      <td>10:00 - 11:00</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td class="highlight">English</td>
+      <td>PE</td>
+      <td>Math</td>
+    </tr>
+    <tr>
+      <td>11:00 - 12:00</td>
+      <td>History</td>
+      <td>PE</td>
+      <td>Math</td>
+      <td class="highlight">Science</td>
+      <td>English</td>
+    </tr>
+  </table>
+</body>
+</html>
