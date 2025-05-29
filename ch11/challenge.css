@@ -1,0 +1,39 @@
+/* 문제 1: 메뉴 링크에 마우스 오버 시 */
+/* 문제 2: 로그인 폼 입력창에 포커스 시 */
+/* 문제 3: 랭킹 리스트의 첫 번째 항목 */
+/* 문제 4: 랭킹 리스트의 마지막 항목 */
+/* 문제 5: 랭킹 리스트의 3번째 항목 */
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.menu:hover {
+    background-color: pink;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+}
+.login-form input:focus {
+    background-color: lightblue;
+    width: 200px;
+}
+.ranking li:first-child {
+    font-weight: bold;
+    color: red;
+}
+.ranking li:nth-child(3) {
+    color: green;
+    font-style: italic;
+}
+.ranking li:last-child {
+    text-decoration: underline;
+    color: purple;
+    
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input tag 속성중 type="text"인 요소 선택 */
+      input[type="text"] {
+        border: 1px solid gray;
+        padding: 5px;
+        width: 300px;
+      }
+      input[type="submit"] {
+        background-color: blue;
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: none;
+      }
+      p[class~="highlight"] {
+        background-color: yellow;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      [data-type] {
+        border: 2px dashed green;
+        margin: 10px;
+        padding: 10px;
+      }
+      /* 속성 data-role 가지고 있는 요소중에 값 editor 포함 선택자를 만들어보자 */
+      [data-role~="editor"] {
+        border: 4px dashed pink;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(255, 248, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Type text here..." />
+    <input type="submit" value="Submit" />
+    <p class="content highlight">Highlighted paragraph</p>
+    <div data-type="card">Card formatted content</div>
+    <span data-role="viewer editor">What is the role of Editor</span>
+  </body>
+</html>
