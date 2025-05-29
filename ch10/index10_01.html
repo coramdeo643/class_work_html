@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 결합 선택자 :
+         자손 선택자 */
+        h1 p{
+            color: green;
+        }
+        /* 인접 형제 선택자(+) */
+        h1 + p {
+            color: red;
+        }
+        /* 일반 형제 선택자(~) */
+        h1 ~ p {
+            color: blue;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <p>ABCDEFG</p>
+    <h1>This is h1 tag</h1>
+    <p>ABCDEFG</p>
+    <p>ABCDEFG</p>
+    <p>ABCDEFG</p>
+    <div>
+        <p>123456789</p>
+    </div>
 </body>
 </html>
