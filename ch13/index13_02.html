@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model comprehension</title>
+    <!-- internal style sheet -->
+     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* 요소 크기를 계산하는 기준방식이 여러가지 있음 */
+            /* 기본 값 = content-box */
+            /* 자동 조정 */
+            box-sizing: border-box; 
+        }
+
+        .box {
+            width: 200px; /* content 영역 너비 */
+            height: 100px; /* content 영역 높이 */
+            background-color: lightblue;
+        }
+        .box {
+            padding: 20px; /* content 영역과 border 사이의 여백 */
+        }
+        .box {
+            border: 5px solid black; /* content 영역과 padding 사이의 테두리 */
+        }
+        .box {
+            margin: 10px; /* border와 다른 요소 사이의 여백 */
+        }
+
+     </style>
+</head>
+<body>
+    <div class="box">div tag 1 box model</div>
+    <div>div tag 2</div>
+    <div>
+        <pre>
+            요소 크기 계산해보기
+            box-sizing: border-box
+            이 기준은 width 속성 값이 20px 이라면
+            콘텐츠 크기 + padding + border 크기를 포함해서 렌더링 된다.
+        </pre>
+    </div>
+</body>
+</html>
