@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 vs 블록 vs 인라인-블록</title>
+    <style>
+        *, *::before, *::after {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .inline {
+            display: inline;
+            /* inline 값은 width, height 크기 지정 불가 */
+            width: 100px;
+            height: 100px;
+            margin: 20px; 
+            /* margin은 좌우만 적용됨 */
+            padding: 0 50px;
+            /* padding은 좌우적용 가능, 상하는 제한적(레이아웃 영향 미침)*/
+        }
+
+        .block {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>1. Inline component</h3>
+    <div class="box inline">Box1</div>
+    <div class="box inline">Box2</div>
+    <div class="box inline">Box3</div>
+
+    <h3>2. Block component</h3>
+    <div class="box block">Box1</div>
+    <div class="box block">Box2</div>
+    <div class="box block">Box3</div>
+
+    <h3>3. Inline-Block component</h3>
+    <div class="box inline-block">Box1</div>
+    <div class="box inline-block">Box2</div>
+    <div class="box inline-block">Box3</div>
+
+    <br><br>
+    <h3>span tag usage</h3>
+    <span style="color: aqua; font-weight: bold;">Hello</span>&nbsp;&nbsp;&nbsp;<span>Freut mich</span>
+</body>
+</html>
