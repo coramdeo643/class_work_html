@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 40px;
+        font-family: "CookieRun", sans-serif;
+      }
+      @font-face {
+        font-family: "CookieRun";
+        src: url("CookieRun Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      .chat-massage {
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        text-decoration: overline;
+      }
+      .message-normal {
+        white-space: normal; /* 기본값 / 공백 및 줄바꿈 처리 */
+      }
+
+      .message-nowrap {
+        white-space: nowrap; /* 줄바꿈 없이 한 줄로 표시 */
+        text-overflow: ellipsis; /* 넘치는 텍스트는 ...으로 표시 */
+        overflow: hidden; /* 넘치는 텍스트는 숨김 처리 */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Chatting message styling</h2>
+    <div class="chat-massage message-normal">
+      안녕? 오늘 기분이 어때? 아주 긴 메시지를 보내볼게요. 이 메시지는 줄 바꿈이
+      됩니다.
+    </div>
+    <div class="chat-massage message-nowrap">
+      안녕? 오늘 기분이 어때? 아주 긴 메시지를 보내볼게요. 이 메시지는 줄
+      바꿈없이 ... 으로 표시됨.
+    </div>
+  </body>
+</html>

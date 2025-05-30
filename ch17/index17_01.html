@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy adventure🚀</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        position: static; /* 기본값, 문서의 흐름 - block, inline */
+      }
+
+      .star {
+        font-size: 30px;
+        position: absolute;
+        animation: twinkle 2s infinite;
+      }
+      @keyframes twinkle {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.2;
+        }
+      }
+
+      .planet {
+        font-size: 100px;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+      }
+
+      .spaceship {
+        /* fixed - 문서의 흐름에서 벗어나며 화면 기준으로 top, left, right, bottom으로 지정가능 
+        스크롤을 움직여도 화면 기준으로 고정이 된다 */
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        font-size: 40px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="star" style="top: 50px; left: 100px;">✨</div>
+    <div class="star" style="top: 150px; left: 500px;">✨</div>
+    <div class="star" style="top: 250px; left: 150px;">✨</div>
+    <div class="star" style="top: 1000px; left: 700px;">✨</div>
+    <div class="star" style="top: 100px; left: 350px;">🌠</div>
+    <div class="spaceship">🚀</div>
+    <div class="planet">🪐</div>
+    <div>🌞</div>
+    
+  </body>
+</html>
