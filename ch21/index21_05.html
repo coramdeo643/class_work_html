@@ -19,37 +19,26 @@
         border: 2px solid darkblue;
         color: white;
         text-align: center;
-        border-radius: 10%;
+        border-radius: 20%;
       }
       /* 1. flex-grow */
       /* 2. flex-shrink */
+      /* 3. flex-basis */
       .item1 {
-        flex-shrink: 1;
+        flex-basis: 200px;
+        flex-grow:1;
       }
       .item2 {
-        flex-shrink: 2;
+        flex-basis: 150px;
       }
-      /* flex-shrink : 화면의 크기가 작아질때 축소하는 비율 의미함
-      즉, 공간이 부족할때 얼마나 flex item 들이 축소될지를 결정하는 속성
-      기본값은 1 입니다. 숫자가 클수록 더 많이 축소됩니다. */
-
+      /* flex-basis : 
+      flex item 의 기본 크기를 설정하는 속성 */
     </style>
   </head>
   <body>
     <div class="container">
       <div class="item item1">1</div>
-      <div class="item item1">1</div>
-      <div class="item item1">1</div>
       <div class="item item2">2</div>
-      <div class="item item2">2</div>
-      <div class="item item2">2</div>
-      <div class="item item1">1</div>
-      <div class="item item1">1</div>
-      <div class="item item1">1</div>
-      <div class="item item2">2</div>
-      <div class="item item2">2</div>
-      <div class="item item2">2</div>
-      
     </div>
   </body>
 </html>
