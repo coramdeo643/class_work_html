@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS priority 
+      1. !important
+      2. inline style : direct property in the HTML tag 
+      3. ID selector : selected as #id 
+      4. class selector : selected as .class
+      5. tag selector : selected as div, p, etc.
+      6. universal selector : selected as *
+      */
+      p {
+        color : gray;
+      }
+      .highlight {
+        color: red;
+      }
+      #special {
+        color: blue;
+      }
+      p[style] {
+        color : blueviolet !important;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="special" class="highlight" style="color: brown">TEXT</p>
+    </div>
+  </body>
+</html>

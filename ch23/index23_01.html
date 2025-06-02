@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+        header, main, footer {
+            padding : 20px;
+            text-align: center;
+        }
+        header {
+            background-color: blue;
+            color: white;
+        }
+        main {
+            background-color: lightgray;
+        }
+        footer {
+            background-color: aquamarine;
+        }
+        /* Smartphone size */
+        @media (max-width: 600px) {
+            header {
+                font-size: 20px;
+            }
+            main {
+                font-size: 18px;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+        /* Computer monitor size */
+         @media (min-width: 601px) {
+            header {
+                font-size: 40px;
+            }
+            main {
+                font-size: 40px;
+            }
+            footer {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <main>Main Contents</main>
+    <footer>Footer</footer>
+</body>
+</html>
