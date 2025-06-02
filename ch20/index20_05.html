@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center; /* 주축 방향 정렬 */
+        align-items: center; /* 교차축 방향 정렬 */
+      }
+      .flex-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        border-radius: 10%;
+      }
+      .flex-item-child {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 220, 169);
+        border-radius: 10%;
+        text-align: center;
+        line-height: 100px; /* 수직 중앙 정렬을 위한 라인 높이 설정 */
+        color: rgb(136, 52, 52);
+        font-size: small;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="flex-item-child">item child</div>
+      </div>
+    </div>
+  </body>
+</html>
