@@ -64,3 +64,8 @@ head--container 안에 있는 모든 태그들 중에 class 값, .head-brand 선
     font-weight: bold;
     font-size: 1.2rem;  
 }
+
+.head--container .head--brand a:hover {
+    color : #2186c3;
+    cursor: pointer;
+}
