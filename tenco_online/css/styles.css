@@ -125,37 +125,143 @@ section {
 
 .skill {
   width: 22%;
-  height:100%;
+  height: 100%;
   background-color: #fff;
   display: flex;
   border: 1px solid #ccc;
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  box-shadow: .4rem .2rem .2rem lightgray;
+  box-shadow: 0.3rem 0.4rem 0.2rem lightgray;
   min-width: 200px;
-  
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translate(0, -5px);
 }
 
 .skill--icon {
   font-size: 2rem;
-  margin:0 10px;
-  color : #2186c3
+  margin: 0 10px;
+  color: #2186c3;
 }
 .skill--title {
   display: flex;
   flex-direction: column;
-  align-content: center;;
+  align-content: center;
 }
 .skill--name {
-  font-size:.9rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: .2rem;
-  color:#545e6f;
+  margin-bottom: 0.2rem;
+  color: #545e6f;
 }
 .skill--msg {
-  font-size: .8rem;
-  color:#545e6f;
+  font-size: 0.8rem;
+  color: #545e6f;
 }
+
+.roadmap--container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.roadmap--title--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roadmap--title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color : #545e6f;
+}
+
+.slide--prev {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #9893b6;
+  transition : 0.3s;
+}
+
+.slide--prev:hover {
+  color: #342d5c;
+}
+
+.slide--next {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #9893b6;
+  transition:.3s;
+}
+
+.slide--next:hover {
+  color: #342d5c;
+}
+
+/* ul tag style init */
+ul {
+  list-style: none;
+  padding: 1rem .1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* ====================== */
+/* 직접 만들어보기 */
+
+
+.class--card {
+  border: 0; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0.3rem 0.4rem 0.2rem lightgray;
+  transition: 0.3s;
+  margin: 0 10px;
+  min-width: 200px;
+}
+
+.class--card:hover {
+  transform: translate(0, -5px);
+}
+
+.class--container {
+  padding: 4% 7% 7%;
+}
+
+.class--skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.class--type {
+  font-weight: 500;
+}
+
+.class--format {
+  color:#fff;
+  font-size: 11px;
+  background-color: rgb(0, 55, 128);
+  border: 0px;
+  border-radius: 10%;
+  padding:2.5%;
+}
+.class--desc {
+  font-size: smaller;
+}
+.class--detail {
+  
+}
+/* ====================== */
+
+
+
+
+
 
 /* Media */
 @media (min-width: 1200px) {
