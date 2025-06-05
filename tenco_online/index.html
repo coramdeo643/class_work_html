@@ -2,6 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="텐코쇼핑" />
     <meta name="description" content="온라인 강의 리스트" />
     <meta name="keywords" content="Lecture" />
@@ -10,13 +11,15 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <!-- 일반적인 fabicon 설정 -->
     <!-- 1.  rel 속성 : <link> 태그에서 사용되며, 현재 문서와 연결된 리소스 간의 관계를 정의합니다. -->
     <!-- 2.  xx.ico : 파비콘으로 주로 사용되는 이미지 파일 형식. -->
     <link rel="icon" href="img/tencoding_fabicon.png" />
     <!-- 아이폰용 fabicon 설정 -->
     <link rel="apple-touch-icon" href="img/tencoding_fabicon.png" />
-    <!-- 인터넷 익스플로러용 fabicon 설정-->
+
+    <!-- 인터넷 익스플러용 fabicon 설정-->
     <!-- <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico" /> -->
 
     <!-- CSS Reset(1), style.css, 아이콘 폰트, 웹페이지 사용 폰트 -->
@@ -34,7 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-
+    <!-- font awsome 이메일 인증 후 CND 링크 생성해서 -- 아이콘 검색, 클래스 명 확인 -> 사용 -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -42,7 +45,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Layout tool setting -->
+
+    <!-- 레이아웃 틀 설정 -->
     <!-- 항상 화면을 100% 로 사용하면, 와이드 스크린에서 웹페이지가 기대와 달리 보일 수 있음 -->
     <!-- header 에 상단 메뉴까지 넣을 예정 -->
 
@@ -52,163 +56,185 @@
       inner 클래스로 감싸주기로 함
       각 하부 요소 배치를 위해서는 각 layout 별 container 로 정의해주기로 함
     -->
-
-    <title>Tencoding Online Lecture</title>
+    <title>텐코딩온라인강의</title>
   </head>
   <body>
     <header>
       <div class="inner">
-        <!-- 우리가 설정한 css 네이밍은 충돌을 피하기위해 -- double dashed 사용 -->
+        <!-- 우리 설정한 css 네이밍은 충돌을 피하기 위해서 -- 하이픈 두개를 사용한다 -->
         <div class="head--container">
+          <div class="head--brand"><a href="https://naver.com">텐코딩</a></div>
           <div class="head--brand">
-            <a href="https://naver.com">Tencoding</a>
-          </div>
-          <div class="head--brand">
-            <a href="https://naver.com">TenCoding Blog</a>
+            <a href="https://naver.com">텐코딩 블로그</a>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main image section -->
-    <!-- 100% of the screen -->
+    <!-- 메인 이미지 섹션 -->
+    <!-- 화면에 100% 크기를 차지하게 설정할 예정 -->
     <section class="main">
       <div class="main--container">
         <div class="inner">
           <div class="title--container">
-            <div class="title">We focus on proactive learning!</div>
-          </div>
-          <div class="message">
-            The ability to solve problems on your own!<br />
-            The ability to find and learn! <br />
-            The ability to find fun for yourself!<br />
+            <div class="title">주도적인 학습에 집중합니다</div>
+            <div class="message">
+              스스로 문제를 해결하는 능력<br />
+              찾아서 학습 하는 능력 <br />
+              스스로 재미를 찾아 내는 능력 <br />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Skill section -->
+
+    <!-- 스킬 섹션 영역  -->
     <section>
       <div class="inner">
         <div class="skill--container">
           <div class="skill">
             <i class="fa-brands fa-java skill--icon"></i>
             <div class="skill--title">
-              <div class="skill--name">Back-end</div>
-              <div class="skill--msg">ERP/WEB/APP</div>
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
             </div>
           </div>
           <div class="skill">
-            <i class="fa-solid fa-mobile-screen-button skill--icon"></i>
+            <i class="fa-solid fa-mobile skill--icon"></i>
             <div class="skill--title">
-              <div class="skill--name">Front-end</div>
-              <div class="skill--msg">Mobile/Web/Desktop</div>
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
             </div>
           </div>
           <div class="skill">
             <i class="fa-solid fa-database skill--icon"></i>
             <div class="skill--title">
-              <div class="skill--name">Backend</div>
-              <div class="skill--msg">Data Analysis</div>
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
             </div>
           </div>
           <div class="skill">
             <i class="fa-brands fa-python skill--icon"></i>
             <div class="skill--title">
-              <div class="skill--name">Backend</div>
-              <div class="skill--msg">Crawling/DA</div>
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Roadmap Section (Card layout) -->
+
+    <!-- 로드맵 섹션 영역 1 (카드레이아웃 만들어 보기) -->
     <section>
       <div class="inner">
-        <!-- Upper -->
+        <!-- wrap을 감싸기 위한 div -->
         <div class="roadmap--container">
           <div class="roadmap--title--container">
-            <div class="roadmap--title">Blogs & Books</div>
+            <div class="roadmap--title">블로그 및 서적</div>
             <div class="arrow--container">
-              <i class="fa-solid fa-circle-chevron-left slide--prev"></i>
-              <i class="fa-solid fa-circle-chevron-right slide--next"></i>
+              <i class="fas fa-chevron-circle-left slide--prev"></i>
+              &nbsp;&nbsp;
+              <i class="fas fa-chevron-circle-right slide--next"></i>
             </div>
           </div>
         </div>
-        <!-- Lower -->
-        <ul class="class--list">
+
+        <!-- HTML5 에서는 태그에 확장처리를 위한 속성으로 data-* 속성 추가
+                 data-변수이름=변수값 으로 정의하고, JS 등에서 활용 가능 -->
+        <ul class="class--list" data-position="0">
           <li class="class--card">
-            <img src="https://picsum.photos/id/7/200/200" alt="image1" />
-            <a href="https://naver.com" target="_blank">
+            <img
+              src="https://picsum.photos/id/10/300/300"
+              alt="텐코딩 블로그"
+              class="class--image"
+            />
+            <a href="https://blog.naver.com/devnote1" target="_blank">
               <div class="class--container">
                 <div class="class--skill">
-                  <div class="class--type">How to learn</div>
-                  <div class="class--format">Blog</div>
+                  <div class="class--type">학습방법</div>
+                  <div class="class--format">블로그</div>
                 </div>
                 <div class="class--desc">
                   <div class="class--title">
-                    How to learn IT
+                    IT는 배우는 방법을 익혀야합니다
                   </div>
-                  <div class="class--detail">IT learning strategy</div>
+                  <div class="class--detail">IT를 배우는 전략</div>
                 </div>
               </div>
             </a>
           </li>
           <li class="class--card">
-            <img src="https://picsum.photos/id/8/200/200" alt="image1" />
-            <a href="https://naver.com" target="_blank">
+            <img
+              src="https://picsum.photos/id/20/300/300"
+              alt="텐코딩 블로그"
+              class="class--image"
+            />
+            <a href="https://blog.naver.com/devnote1" target="_blank">
               <div class="class--container">
                 <div class="class--skill">
-                  <div class="class--type">Publications</div>
-                  <div class="class--format">Book</div>
+                  <div class="class--type">출판서적</div>
+                  <div class="class--format">서적</div>
                 </div>
                 <div class="class--desc">
-                  <div class="class--title">Python for Beginners</div>
-                  <div class="class--detail">Python programming</div>
+                  <div class="class--title">비전공자를 위한 파이썬</div>
+                  <div class="class--detail">파이썬 프로그래밍</div>
                 </div>
               </div>
             </a>
           </li>
           <li class="class--card">
-            <img src="https://picsum.photos/id/13/200/200" alt="image1" />
-            <a href="https://naver.com" target="_blank">
+            <img
+              src="https://picsum.photos/id/30/300/300"
+              alt="텐코딩 블로그"
+              class="class--image"
+            />
+            <a href="https://blog.naver.com/devnote1" target="_blank">
               <div class="class--container">
                 <div class="class--skill">
-                  <div class="class--type">How to learn</div>
-                  <div class="class--format">Blog</div>
+                  <div class="class--type">학습방법</div>
+                  <div class="class--format">블로그</div>
                 </div>
                 <div class="class--desc">
-                  <div class="class--title">OOP Java</div>
-                  <div class="class--detail">SOLID Principle</div>
+                  <div class="class--title">객체지향 프로그래밍 자바</div>
+                  <div class="class--detail">SOLID 원칙이란</div>
                 </div>
               </div>
             </a>
           </li>
           <li class="class--card">
-            <img src="https://picsum.photos/id/11/200/200" alt="image1" />
-            <a href="https://naver.com" target="_blank">
+            <img
+              src="https://picsum.photos/id/40/300/300"
+              alt="텐코딩 블로그"
+              class="class--image"
+            />
+            <a href="https://blog.naver.com/devnote1" target="_blank">
               <div class="class--container">
                 <div class="class--skill">
-                  <div class="class--type">Publications</div>
-                  <div class="class--format">Book</div>
+                  <div class="class--type">출판서적</div>
+                  <div class="class--format">서적</div>
                 </div>
                 <div class="class--desc">
-                  <div class="class--title">Data Analysis and DBA</div>
-                  <div class="class--detail">Relational DB</div>
+                  <div class="class--title">데이터 분석 및 DBA</div>
+                  <div class="class--detail">관계형 데이터베이스</div>
                 </div>
               </div>
             </a>
           </li>
           <li class="class--card">
-            <img src="https://picsum.photos/id/15/200/200" alt="image1" />
-            <a href="https://naver.com" target="_blank">
+            <img
+              src="https://picsum.photos/id/50/300/300"
+              alt="텐코딩 블로그"
+              class="class--image"
+            />
+            <a href="https://blog.naver.com/devnote1" target="_blank">
               <div class="class--container">
                 <div class="class--skill">
-                  <div class="class--type">Publications</div>
-                  <div class="class--format">Book</div>
+                  <div class="class--type">학습방법</div>
+                  <div class="class--format">블로그</div>
                 </div>
                 <div class="class--desc">
-                  <div class="class--title">Flutter Framwork</div>
-                  <div class="class--detail">Cross Platform</div>
+                  <div class="class--title">플러터 프레임워크</div>
+                  <div class="class--detail">크로스 플랫폼이란 뭘까?</div>
                 </div>
               </div>
             </a>
@@ -216,5 +242,239 @@
         </ul>
       </div>
     </section>
+
+    <!-- 로드맵 섹션 영역 2  -->
+    <section>
+      <div class="inner">
+        <div class="roadmap--container">
+          <div class="roadmap--title--container">
+            <div class="roadmap--title">핵심 역량 강의</div>
+            <div class="arrow--container">
+              <i class="fas fa-chevron-circle-left slide--prev"></i>
+              &nbsp;&nbsp;
+              <i class="fas fa-chevron-circle-right slide--next"></i>
+            </div>
+          </div>
+        </div>
+
+        <ul class="class--list">
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/11/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/12/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/13/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/14/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 로드맵 섹션 영역 3  -->
+    <section>
+      <div class="inner">
+        <div class="roadmap--container">
+          <div class="roadmap--title--container">
+            <div class="roadmap--title">데이터분석 R, 몽고디비, RDBMS</div>
+            <div class="arrow--container">
+              <i class="fas fa-chevron-circle-left slide--prev"></i>
+              &nbsp;&nbsp;
+              <i class="fas fa-chevron-circle-right slide--next"></i>
+            </div>
+          </div>
+        </div>
+
+        <ul class="class--list">
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/111/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/112/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/113/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="class--card">
+            <img
+              src="https://picsum.photos/id/114/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+           <li class="class--card">
+            <img
+              src="https://picsum.photos/id/115/300/300"
+              alt="텐코딩 영상"
+              class="class--image"
+            />
+            <a href="http://www.naver.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">운영체제</div>
+                  <div class="class--format">온라인 강의</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">운영체제와 시스템 프로그래밍</div>
+                  <div class="class--detail">컴퓨터 공학의 핵심</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <!-- copyright 2025 @ All rights reserved.
+     (저작권을 나타내는 문구)
+     해당 컨텐츠를 2025년에 콘텐츠의 저작권이 주장됨을 의미 -->
+    <footer>
+      <div class="inner">
+        <div class="footer--message">
+          We aim for a culture where individuals learn on their own and ask good questions!
+        </div>
+        <div class="footer--contact">contact : tencoding@ten.org</div>
+        <div class="footer--copyright">
+          copyright 2025 @ All rights reserved.
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>

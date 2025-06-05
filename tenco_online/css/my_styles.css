@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+/* a link tag style init */
+/* All components of a tag is initiated */
+a {
+  all: unset;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+.inner {
+  /* width 1200px 이상, media query max-width 설정 예정 */
+  width: 100%;
+  /* align-items 등으로 수직 가운데 정렬을 위해 미리 height 크기 설정 */
+  height: 100%;
+  /* for center align */
+  margin: 0 auto;
+  /* for 좌우 padding 값을 주어 좌우에 딱 붙지 않도록 설정하기 위함 */
+  padding: 0 2rem;
+  /* 넘치는 영역에 대해서 표시가 안되도록 설정 예정 */
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.head--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 자손 선택자 (공백 중요!) 
+head--container 안에 있는 모든 태그들 중에 class 값, .head-brand 선택 */
+.head--container .head--brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.head--container .head--brand a:hover {
+  color: #2186c3;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  background-color: #fff;
+}
+
+.main {
+  height: 360px;
+  background-image: url(https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png);
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  /* x-axis = center, y-axis = 20% */
+  background-size: cover;
+  z-index: 1;
+}
+
+.main--container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(30, 40, 80, 0.5);
+  z-index: 2;
+}
+
+.title--container {
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.message {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.skill--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* 상하좌우 */
+  padding: 1rem 0;
+  /* flex-wrap, 다음줄로 넘어갔을경우 여백 설정 */
+  gap: 10px;
+}
+
+.skill {
+  width: 22%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0.3rem 0.4rem 0.2rem lightgray;
+  min-width: 200px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translate(0, -5px);
+}
+
+.skill--icon {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #2186c3;
+}
+.skill--title {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.skill--name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #545e6f;
+}
+.skill--msg {
+  font-size: 0.8rem;
+  color: #545e6f;
+}
+
+.roadmap--container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.roadmap--title--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roadmap--title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color : #545e6f;
+}
+
+.slide--prev {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #9893b6;
+  transition : 0.3s;
+}
+
+.slide--prev:hover {
+  color: #342d5c;
+}
+
+.slide--next {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #9893b6;
+  transition:.3s;
+}
+
+.slide--next:hover {
+  color: #342d5c;
+}
+
+/* ul tag style init */
+ul {
+  list-style: none;
+  padding: 1rem .1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* ====================== */
+/* 직접 만들어보기 */
+
+
+.class--card {
+  border: 0; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0.3rem 0.4rem 0.2rem lightgray;
+  transition: 0.3s;
+  margin: 0 10px;
+  min-width: 200px;
+}
+
+.class--card:hover {
+  transform: translate(0, -5px);
+}
+
+.class--container {
+  padding: 4% 7% 7%;
+}
+
+.class--skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.class--type {
+  font-weight: 500;
+}
+
+.class--format {
+  color:#fff;
+  font-size: 11px;
+  background-color: rgb(0, 55, 128);
+  border: 0px;
+  border-radius: 10%;
+  padding:2.5%;
+}
+.class--desc {
+  font-size: smaller;
+}
+.class--detail {
+  
+}
+/* ====================== */
+
+
+
+
+
+
+/* Media */
+@media (min-width: 1200px) {
+  /* screen size minimum 1200, need to larger */
+  .inner {
+    max-width: 1200px;
+  }
+}
