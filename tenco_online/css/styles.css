@@ -230,6 +230,11 @@ ul {
     border-radius: 8px;
     margin: 0 10px;
     /* border: 1px solid gray; */
+      transition: 0.3s;
+
+}
+.class--card:hover {
+  transform: translate(0, -5px);
 }
 
 .class--image {
@@ -269,8 +274,8 @@ ul {
 
 footer {
   border: 1px solid #e4e4e4;
-  background-color: #f8f8f8;
-  color: rgb(105, 104, 104);
+  background-color: #f1fdee;
+  color: rgb(104, 105, 104);
   padding: 1.5rem 0;
   margin: 2rem 0 0 0;
 }
